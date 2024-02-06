@@ -47,7 +47,7 @@ h1,h2,h3{
 }
 
 .wrapper{
-    max-width: 1100px;
+    max-width: 1300px;
     padding-inline: 2rem;
     margin-inline: auto;
 
@@ -57,7 +57,7 @@ h1,h2,h3{
 }
 header{
     text-align: center;
-    margin-block:6rem;
+    margin-block:3rem;
 }
 h1{
     font-weight: var(--fw-light);
