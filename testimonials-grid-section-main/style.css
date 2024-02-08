@@ -55,7 +55,9 @@ body{
     font-size: var(--fs-400);
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-gray-600) / 0.25);
+    box-shadow: 2.5rem 3.75rem 3rem -3rem  hsla(var(--clr-gray-600), 0.25);
+
+
 }
 
 .testimonial:nth-child(1){
