@@ -122,3 +122,10 @@ header > p {
 .border-blue{
     border-color: var(--clr-blue);
 }
+.attribution {
+    margin-top: 6rem;
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
