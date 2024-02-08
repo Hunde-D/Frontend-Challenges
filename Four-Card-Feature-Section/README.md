@@ -1,4 +1,5 @@
 # Frontend Mentor - Four card feature section solution
+
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
@@ -7,21 +8,18 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Table of contents
 
-- [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Built with](#built-with)
-    - [Screenshot](#screenshot)
+- [The challenge](#the-challenge)
+- [Built with](#built-with)
+- [Screenshot](#screenshot)
 
-## Overview
+## The challenge
+- The challenge is to build out this feature section and get it looking as close to the design as possible.
 
-### The challenge
-- the challenge is to build out this feature section and get it looking as close to the design as possible.
-
-Users should be able to:
+**Users should be able to:**
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
