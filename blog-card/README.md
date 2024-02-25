@@ -30,8 +30,23 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
     ```bash
     git clone https://github.com/Hunde-D/Frontend-Challenges.git
     ```
+   `or` clone this specific challenge directory by running the `command` below in your terminal
+    ```bash
+    // create a new directory or navigate to your preferred directory
+    mkdir <folder> 
+    cd <folder>
+    ```
+    
+   `//run the command below inside your folder/directory`
+   ```bash
+    git init
+    git remote add origin -f https://github.com/Hunde-D/Frontend-Challenges.git
+    git sparse-checkout set --cone
+    git checkout main
+    git sparse-checkout set blog-card
+    ```
 
-2. `cd` `Frontend-Challenges` folder in your preferred editor:
+2. use your preferred editor:
     ```bash
     cd blod-card
     ```
@@ -41,6 +56,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
     ```bash
     npm start
     ```
+3. On your browser, open [http://localhost:3000](http://localhost:3000) to view the project.
 ## Available Scripts
 
 In the project directory, you can run:
