@@ -36,6 +36,9 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
     cd blod-card
     ```
     ```bash
+    npm install
+    ```
+    ```bash
     npm start
     ```
 ## Available Scripts
