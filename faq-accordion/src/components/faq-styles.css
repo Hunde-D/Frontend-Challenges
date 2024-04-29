@@ -24,7 +24,7 @@
 .accordion-title {
   width: 100%;
   display: flex;
-  align-self: flex-start;
+  align-items: center;
   color: hsl(292, 16%, 14%);
   gap: 20px;
   font-weight: 700;
@@ -78,8 +78,6 @@ hr {
   margin: 10px 0;
   border: 0;
   border: 1px solid rgba(216, 207, 214, 0.5);
-}
-.accordion-answer {
 }
 
 .selection-state {
