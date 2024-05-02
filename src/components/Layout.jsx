@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 export default function Layout() {
   return (
-    <div className="w-screen bg-red-300">
+    <div className="w-screen h-screen font-sans bg-[#0b1120] text-white bg">
       <Header />
-      <main>
+      <main className="w-screen">
         <Outlet />
       </main>
       <Footer />
