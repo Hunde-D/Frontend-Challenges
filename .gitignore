@@ -1,23 +1,29 @@
-# Avoid
-.gitignore
-.README-template.md
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+blog-card
+City-Skyline
+Four-Card-Feature-Section
+testimonials-grid-section-main
 to-do
-/tst
-/.idea
-/Four-Card-Feature-Section/.idea
-# Avoid accidental Sketch file upload
-###############################################
-## Please do not remove line 5 - thanks! 🙂 ##
-###############################################
-*.sketch
 
-# Avoid accidental XD or Figma upload if you convert the design file
-#######################################################
-## Please do not remove lines 11 and 12 - thanks! 🙂 ##
-#######################################################
-*.xd
-*.fig
+node_modules
+dist
+dist-ssr
+*.local
 
-# Avoid your project being littered with annoying .DS_Store files!
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-```
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
