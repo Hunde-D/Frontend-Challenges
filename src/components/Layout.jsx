@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div className="  w-full h-full font-sans  text-white bg">
       <Header />
-      <main className=" effect w-full h-full">
+      <main className=" w-full h-full">
         <Outlet />
       </main>
       {/* <Footer /> */}
