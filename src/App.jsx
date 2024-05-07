@@ -14,6 +14,10 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Projects from "./pages/Projects";
 import Error from "./pages/Error";
 
+//loaders
+import { loader as projectID } from "./pages/ProjectDetail";
+
+//style
 import "./App.css";
 
 const router = createBrowserRouter(
@@ -21,7 +25,11 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />} errorElement={<Error />}>
       <Route index element={<Home />} />
       <Route path="projects" element={<Projects />} />
-      <Route path="project/:id" element={<ProjectDetail />} />
+      <Route
+        path="projects/:id"
+        element={<ProjectDetail />}
+        loader={projectID}
+      />
     </Route>
   )
 );
