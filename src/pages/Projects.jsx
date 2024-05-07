@@ -18,11 +18,12 @@ export default function Projects() {
     setSearch(e.target.value);
     console.log(search);
   };
+
   console.log(searchData.length);
   console.log(cardData.length);
   return (
     <div className="w-full h-full grid grid-cols-3 justify-items-center gap-12 px-14 py-10">
-      <div className="col-span-3 flex max-w-64 border-2 border-slate-300/50 shadow-md  shadow-slate-200 rounded-2xl px-3 py-2 gap-2">
+      <div className=" peer col-span-3 flex w-2/5 border-2 border-slate-300/50 shadow-md  shadow-slate-200 rounded-full px-3 py-2 gap-2 focus-within:w-4/6 transition-all">
         <FaSearchengin size={30} />
         <input
           type="text"
@@ -32,18 +33,23 @@ export default function Projects() {
           className=" outline-none h-full w-full px-1 py-1"
         />
       </div>
-      {search && (
-        <div className="flex flex-col col-span-3 w-52 h-40 bg-teal-200 divide-slate-200 rounded-b-md max-w-64 mb-10">
-          {searchData.map((result, index) => {
+      <div className=" col-span-3 w-4/6  min-h-96 flex flex-col  justify-start  bg-slate-50 divide-slate-100 divide-y-2 shadow-sm rounded-md  -my-12 mb-5 empty:hidden empty:transition-all transition-all ">
+        {search &&
+          searchData.map((result, index) => {
             return (
-              <div key={index}>
-                <p>{result.title}</p>
-                <img src={result.img} />
+              <div
+                key={index}
+                className="flex gap-3 w-full  px-20 py-2 justify-between items-center transition-all"
+              >
+                <p className="text-lg capitalize font-medium ">
+                  {result.title}
+                </p>
+                <img src={result.img} className="w-28 h-full object-contain" />
               </div>
             );
           })}
-        </div>
-      )}
+      </div>
+
       {cardData.map((data, index) => {
         return <Card key={index} card={data} />;
       })}

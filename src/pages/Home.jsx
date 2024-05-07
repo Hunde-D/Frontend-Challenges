@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="text-5xl  font-black w-full mb-6 hover:text-blue-600 transition-colors">
           Explore My Solution Showcase for Frontend Mentor Challenges.
         </h1>
-        <p className="w-5/6 mx-10 px-10 py-3 ">
+        <p className="w-5/6 mx-10 px-10 py-3 font-light text-lg">
           Dive into a world of real-world projects provided by{" "}
           <Link
             className="text-blue-600 after:content-['_↗'] ..."
@@ -19,9 +19,9 @@ export default function Home() {
           </Link>
         </p>
       </div>
-      <div className=" flex gap-6 text-center ">
+      <div className=" flex gap-6 text-center justify-center">
         <Link
-          className=" border-none py-2 w-52 text-white bg-blue-500  rounded animate-bounce"
+          className=" border-none -ml-10 py-2 w-52 text-white bg-blue-500  rounded animate-bounce"
           to="projects"
         >
           Explore
@@ -33,6 +33,21 @@ export default function Home() {
         >
           <FaGithub className="" /> Github
         </Link>
+      </div>
+      <div className=" my-32 text-sm font-thin">
+        Challenge by{" "}
+        <Link
+          to="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="text-sky-600"
+        >
+          Frontend Mentor
+        </Link>
+        . Coded by{" "}
+        <Link to="https://github.com" className="text-sky-600">
+          Hunde Desalegn
+        </Link>
+        .
       </div>
     </div>
   );
