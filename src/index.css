@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gradient-to-b from-[#0b1120] to-[#0d1730];
-  }
   button {
     @apply rounded-lg w-fit px-3 py-2;
   }

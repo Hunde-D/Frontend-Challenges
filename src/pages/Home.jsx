@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className=" effect flex flex-col items-center gap-6 w-full h-screen py-32">
       <div className="home-content text-center">
-        <h1 className="text-5xl  font-black w-full mb-6 ">
+        <h1 className="text-5xl  font-black w-full mb-6 hover:text-blue-600 transition-colors">
           Explore My Solution Showcase for Frontend Mentor Challenges.
         </h1>
         <p className="w-5/6 mx-10 px-10 py-3 ">
           Dive into a world of real-world projects provided by{" "}
           <Link
-            className="text-sky-400 after:content-['_↗'] ..."
+            className="text-blue-600 after:content-['_↗'] ..."
             to="https://www.frontendmentor.io/challenges"
             target="_blank"
           >
@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <div className=" flex gap-6 text-center ">
         <Link
-          className=" border-none py-2 w-52 text-white bg-sky-500  rounded"
+          className=" border-none py-2 w-52 text-white bg-blue-500  rounded animate-bounce"
           to="projects"
         >
           Explore

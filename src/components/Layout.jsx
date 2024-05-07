@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export default function Layout() {
   return (
-    <div className="  w-full h-full font-sans  text-white bg">
+    <div className="  w-full h-full font-sans  text-black ">
       <Header />
       <main className=" w-full h-full">
         <Outlet />
