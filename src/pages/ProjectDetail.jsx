@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import { cardData } from "../assets/design";
 // import { challenges } from "../challenges";
-import TipCalculator from "../challenges/tip-calculator/TipCalculator";
+// import TipCalculator from "../challenges/tip-calculator/TipCalculator";
+import Tabs from "../challenges/tabs/Tabs";
 
 export function loader({ params }) {
   return params.id;
@@ -18,7 +19,7 @@ export default function ProjectDetail() {
   return (
     <div className="bg-red-50 w-full h-full ">
       {/* <p>this componet is {loaderData}</p> */}
-      <TipCalculator />
+      <Tabs />
       {/* <Outlet /> */}
     </div>
   );
