@@ -7,28 +7,33 @@ import tipCalculator from "./tipcalculator.jpg";
 export const cardData = [
   {
     id: 1,
-    title: "to do",
+    title: "To-Do",
+    params: "ToDo",
     img: toDo,
   },
   {
     id: 2,
     title: "Tip Calculator",
+    params: "TipCalculator",
     img: tipCalculator,
   },
 
   {
     id: 3,
-    title: "blog card",
+    title: "Blog Card",
+    params: "BlogCard",
     img: blogCard,
   },
   {
     id: 4,
-    title: "testimonial grid",
+    title: "Testimonial Grid",
+    params: "TestimonialGrid",
     img: testimonialGrid,
   },
   {
     id: 5,
-    title: "four card",
+    title: "Four Card",
+    params: "FourCard",
     img: fourCard,
   },
 ];

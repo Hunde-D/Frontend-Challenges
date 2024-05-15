@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply font-mono;
+  }
+
   button {
     @apply rounded-lg w-fit px-3 py-2;
   }

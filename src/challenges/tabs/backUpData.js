@@ -9,7 +9,7 @@ export const backUpData = [
       "Post-ironic selvage chambray sartorial freegan meditation. Chambray chartreuse kombucha meditation, man bun four dollar toast street art cloud bread live-edge heirloom.",
       "Butcher drinking vinegar franzen authentic messenger bag copper mug food truck taxidermy. Mumblecore lomo echo park readymade iPhone migas single-origin coffee franzen cloud bread tilde vegan flexitarian.",
     ],
-    company: "TOMMY",
+    company: "TOMMY",f
   },
   {
     id: "recIL6mJNfWObonls",

@@ -1,26 +1,24 @@
-import { useLoaderData } from "react-router-dom";
-import { cardData } from "../assets/design";
-// import { challenges } from "../challenges";
-// import TipCalculator from "../challenges/tip-calculator/TipCalculator";
-import Tabs from "../challenges/tabs/Tabs";
+import { useParams } from "react-router-dom";
+import { TipCalculator, Tabs } from "../challenges";
+import { IoChevronBackCircleOutline } from "react-icons/io5";
 
-export function loader({ params }) {
-  return params.id;
-}
+const componentMap = {
+  TipCalculator: TipCalculator,
+  Tabs: Tabs,
+  // ...
+};
 
 export default function ProjectDetail() {
-  const loaderData = useLoaderData();
+  const { title } = useParams();
+  console.log("this is title:", title);
 
-  // const data = cardData.filter((card) => card.title === loaderData)[0];
-  // console.log("project data : ", data);
-  // const comp = data.title.replace(" ", "");
-  // const renderComp = challenges[0];
+  const ComponentToRender =
+    componentMap[title] || (() => <div>Invalid ID</div>);
 
   return (
-    <div className="bg-red-50 w-full h-full ">
-      {/* <p>this componet is {loaderData}</p> */}
-      <Tabs />
-      {/* <Outlet /> */}
+    <div className=" w-full h-full">
+      {/* <IoChevronBackCircleOutline size={25} className="" /> */}
+      <ComponentToRender />
     </div>
   );
 }

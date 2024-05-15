@@ -3,6 +3,7 @@ import {
   RouterProvider,
   Route,
   createRoutesFromElements,
+  useLocation,
 } from "react-router-dom";
 
 // components
@@ -14,22 +15,21 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Projects from "./pages/Projects";
 import Error from "./pages/Error";
 
-//loaders
-import { loader as projectID } from "./pages/ProjectDetail";
-
 //style
 import "./App.css";
 
+function LayoutWrapper() {
+  const location = useLocation();
+
+  return <Layout location={location} />;
+}
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />} errorElement={<Error />}>
+    <Route path="/" element={<LayoutWrapper />} errorElement={<Error />}>
       <Route index element={<Home />} />
       <Route path="projects" element={<Projects />} />
-      <Route
-        path="projects/:id"
-        element={<ProjectDetail />}
-        loader={projectID}
-      />
+      <Route path="projects/:title" element={<ProjectDetail />} />
     </Route>
   )
 );

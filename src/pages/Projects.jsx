@@ -14,9 +14,8 @@ export default function Projects() {
     });
     setSearchData(newSearchData);
   }, [search]);
-  const handeleSearch = (e) => {
+  const handleSearch = (e) => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   console.log(searchData.length);
@@ -24,12 +23,12 @@ export default function Projects() {
   return (
     <div className="w-full h-full grid grid-cols-3 justify-items-center gap-12 px-14 py-10">
       <div className=" peer col-span-3 flex w-2/5 border-2 border-slate-300/50 shadow-md  shadow-slate-200 rounded-full px-3 py-2 gap-2 focus-within:w-4/6 transition-all">
-        <FaSearchengin size={30} />
+        <FaSearchengin size={25} className=" text-slate-400" />
         <input
           type="text"
           placeholder="find project..."
           value={search}
-          onChange={handeleSearch}
+          onChange={handleSearch}
           className=" outline-none h-full w-full px-1 py-1"
         />
       </div>
