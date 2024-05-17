@@ -3,8 +3,8 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className=" effect flex flex-col items-center justify-center gap-6 w-full h-screen py-32 max-sm:py-8">
-      <div className="home-content text-center max-sm:w-full">
+    <div className=" effect flex flex-col items-center max-md:place-items-center gap-6 w-full h-screen py-32 max-sm:py-8">
+      <div className="home-content text-center max-sm:w-full max-md:place-self-center">
         <h1 className="text-5xl  font-black w-full mb-6 hover:text-gray-600 text-blue-600 transition-colors max-md:text-2xl max-lg:text-4xl max-sm:text-lg">
           Explore My Solution Showcase for Frontend Mentor Challenges.
         </h1>
@@ -19,7 +19,7 @@ export default function Home() {
           </Link>
         </p>
       </div>
-      <div className=" flex gap-6 text-center justify-center max-sm:text-xs">
+      <div className=" flex gap-6 text-center justify-center max-sm:text-xs max-md:place-self-center">
         <Link
           className=" border-none -ml-10 py-2 w-52 text-white bg-blue-500 max-sm:w-32 max-sm:ml-1 rounded animate-bounce"
           to="projects"
