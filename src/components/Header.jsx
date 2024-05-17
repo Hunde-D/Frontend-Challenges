@@ -7,12 +7,12 @@ export default function Header() {
     <header className="w-full flex justify-between px-10 py-4 ">
       <Link to="/">LOGO</Link>
       <nav className="flex justify-end  items-center w-72 gap-4">
-        <NavLink to="/" className="hover:text-blue-500 ">
+        <NavLink to="/" className="hover:text-blue-500 max-sm:hidden">
           Home
         </NavLink>
         <NavLink
           to="/projects"
-          className="border-r-[1px] px-3 border-gray-400 border-opacity-40 hover:text-blue-500"
+          className="border-r-[1px] px-3 border-gray-400 border-opacity-40 max-sm:hidden hover:text-blue-500"
         >
           Showcase
         </NavLink>

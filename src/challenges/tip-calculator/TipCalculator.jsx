@@ -28,25 +28,23 @@ const TipCalculator = () => {
   };
 
   useEffect(() => {
-    if (bill.noPeople === "")
-      setBill((prevBill) => ({ ...prevBill, noPeople: 1 }));
-    if (bill.noPeople && bill.noPeople !== 0) {
-      let tipPercent = tipRate ? tipRate / 100 : 0;
-      let tipPerPerson = ((bill.amount * tipPercent) / bill.noPeople).toFixed(
-        2
-      );
-      let billPerPerson = (
-        bill.amount / bill.noPeople +
-        Number(tipPerPerson)
-      ).toFixed(2);
-      setPerPerson({
-        bill: billPerPerson,
-        tip: tipPerPerson,
-      });
-    }
+    let tipPercent = tipRate ? tipRate / 100 : 0;
+    let tipPerPerson = (
+      (bill.amount * tipPercent) /
+      (bill.noPeople !== "" ? bill.noPeople : 1)
+    ).toFixed(2);
+
+    let billPerPerson = (
+      bill.amount / (bill.noPeople !== "" ? bill.noPeople : 1) +
+      Number(tipPerPerson)
+    ).toFixed(2);
+    setPerPerson({
+      bill: billPerPerson,
+      tip: tipPerPerson,
+    });
   }, [bill, bill.amount, bill.noPeople, tipRate]);
 
-  const tips = [5, 10, 15, 20, 25];
+  const tips = [1, 2, 5, 10, 15];
   const tipButton = tips.map((amount) => {
     return (
       <Button

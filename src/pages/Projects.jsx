@@ -21,8 +21,8 @@ export default function Projects() {
   console.log(searchData.length);
   console.log(cardData.length);
   return (
-    <div className="w-full h-full grid grid-cols-3 justify-items-center gap-12 px-14 py-10">
-      <div className=" peer col-span-3 flex w-2/5 border-2 border-slate-300/50 shadow-md  shadow-slate-200 rounded-full px-3 py-2 gap-2 focus-within:w-4/6 transition-all">
+    <div className="w-full h-full  grid grid-cols-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-sm:py-5 justify-items-center gap-12 px-14 py-10">
+      <div className="  col-span-3 flex w-2/5 max-sm:w-4/5 max-sm: border-2 border-slate-300/50 shadow-md  shadow-slate-200 rounded-full px-3 py-2 gap-2 focus-within:w-4/6 transition-all">
         <FaSearchengin size={25} className=" text-slate-400" />
         <input
           type="text"
@@ -32,7 +32,7 @@ export default function Projects() {
           className=" outline-none h-full w-full px-1 py-1"
         />
       </div>
-      <div className=" col-span-3 w-4/6  min-h-96 flex flex-col  justify-start  bg-slate-50 divide-slate-100 divide-y-2 shadow-sm rounded-md  -my-12 mb-5 empty:hidden empty:transition-all transition-all ">
+      <div className=" col-span-3 w-4/6  min-h-96  flex flex-col  justify-start  bg-slate-50 divide-slate-100 divide-y-2 shadow-sm rounded-md  -my-12 mb-5 empty:hidden empty:transition-all transition-all ">
         {search &&
           searchData.map((result, index) => {
             return (
