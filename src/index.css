@@ -13,7 +13,7 @@
     @apply font-mono;
   } */
   .home-content {
-    @apply w-[75%] px-16;
+    @apply w-[75%] px-16 max-sm:w-full max-sm:px-8;
   }
 
   .effect {
