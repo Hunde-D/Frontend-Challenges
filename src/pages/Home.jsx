@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className=" effect flex flex-col items-center gap-6 w-full h-screen py-32 max-sm:py-8">
+    <div className=" effect flex flex-col items-center justify-center gap-6 w-full h-screen py-32 max-sm:py-8">
       <div className="home-content text-center max-sm:w-full">
         <h1 className="text-5xl  font-black w-full mb-6 hover:text-gray-600 text-blue-600 transition-colors max-md:text-2xl max-lg:text-4xl max-sm:text-lg">
           Explore My Solution Showcase for Frontend Mentor Challenges.
@@ -34,7 +34,7 @@ export default function Home() {
           <FaGithub className="" /> Github
         </Link>
       </div>
-      <div className=" my-32 text-sm font-thin place-self-end">
+      <div className=" my-32 text-sm font-thin max-sm:place-self-end max-sm:my-auto ">
         Challenge by{" "}
         <Link
           to="https://www.frontendmentor.io?ref=challenge"
