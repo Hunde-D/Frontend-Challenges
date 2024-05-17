@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div className=" effect flex flex-col items-center justify-center gap-6 w-full h-screen py-32 ">
       <div className="home-content text-center max-sm:w-full">
-        <h1 className="text-5xl  font-black w-full mb-6 hover:text-gray-600 text-blue-600 transition-colors max-md:text-2xl max-lg:text-4xl max-sm:text-lg">
+        <h1 className="text-5xl  font-black w-full mb-6 hover:text-gray-600 text-blue-600 transition-colors max-md:text-3xl max-lg:text-4xl max-sm:text-2xl">
           Explore My Solution Showcase for Frontend Mentor Challenges.
         </h1>
-        <p className="w-5/6 mx-10 px-10 py-3 font-light text-lg max-md:text-sm max-lg:text-lg max-sm:w-full max-sm:px-0 max-sm:mx-0 max-sm:text-sm">
+        <p className="w-5/6 mx-10 px-10 py-3 font-light text-lg max-md:text-sm max-lg:text-lg max-sm:w-full max-sm:px-0 max-sm:mx-0 max-sm:text-md">
           Dive into a world of real-world projects provided by{" "}
           <Link
             className="text-blue-600 after:content-['_↗'] ..."
