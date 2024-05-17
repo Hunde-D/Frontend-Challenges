@@ -32,7 +32,7 @@ export default function Projects() {
           className=" outline-none h-full w-full px-1 py-1"
         />
       </div>
-      <div className=" col-span-3 w-4/6  min-h-96  flex flex-col  justify-start  bg-slate-50 divide-slate-100 divide-y-2 shadow-sm rounded-md  -my-12 mb-5 empty:hidden empty:transition-all transition-all ">
+      <div className=" col-span-3 w-4/6  min-h-96  max-md:w-full max-md:text-md flex flex-col  justify-start  bg-slate-50 divide-slate-100 divide-y-2 shadow-sm rounded-md  -my-12 mb-5 empty:hidden empty:transition-all transition-all ">
         {search &&
           searchData.map((result, index) => {
             return (
