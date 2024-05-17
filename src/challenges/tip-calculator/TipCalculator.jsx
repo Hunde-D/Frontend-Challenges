@@ -7,7 +7,6 @@ import { v4 as uuid } from "uuid";
 const TipCalculator = () => {
   const [tipRate, setTipRate] = useState(0);
   const [active, setActive] = useState(null);
-  const [invalid, setInvalid] = useState(false);
   const [bill, setBill] = useState({
     amount: "",
     noPeople: "",
@@ -58,6 +57,18 @@ const TipCalculator = () => {
       </Button>
     );
   });
+  function handleReset() {
+    setBill({
+      amount: "",
+      noPeople: "",
+    });
+    setPerPerson({
+      bill: 0,
+      tip: 0,
+    });
+    setTipRate(0);
+    setActive(null);
+  }
 
   return (
     <div className=" w-full h-screen max-sm:h-full -bg--Light-grayish-cyan flex flex-col justify-center items-center gap-4 py-4 font-mono font-bold text-xl -text--Dark-grayish-cyan">
@@ -102,9 +113,7 @@ const TipCalculator = () => {
               name="noPeople"
               value={bill.noPeople}
               onChange={handleChange}
-              className={`bg-transparent  outline-none  ${
-                invalid ? "outline-red-500" : ""
-              }`}
+              className="bg-transparent  outline-none "
             />
           </div>
         </div>
@@ -123,7 +132,12 @@ const TipCalculator = () => {
             </h3>
             <h3 className=" -text--strong-cyan text-5xl">${perPerson.bill}</h3>
           </div>
-          <button className=" -bg--strong-cyan w-full mt-8">Reset</button>
+          <button
+            className=" -bg--strong-cyan w-full mt-8"
+            onClick={handleReset}
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>
